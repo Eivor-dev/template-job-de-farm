@@ -1,3 +1,6 @@
+ESX = nil
+Citizen.CreateThread(function() while ESX == nil do TriggerEvent("esx:getSharedObject", function(obj) ESX = obj end) Citizen.Wait(0) end end)
+
 local poitblips = {
 	{x = -798.06,  y = 4458.01,  z = 15.44}, -- Récolte
 	{x = 2950.33, y = 2769.76, z = 35.96}, -- traitement
